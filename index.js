@@ -1,45 +1,6 @@
 const form = document.querySelector("form")
 let script = ""
 
-new Bell({
-    description: "Llama la atencion completa del usuario",
-},"error",{
-    screenTime:1000000,distance:{y:100},
-    theme: "colors",
-    distance:{
-        x:0
-    }
-}).launch()
-new Bell({
-    title: "Nuevo tema Colors",
-    description: "Llama la atencion completa del usuario",
-},"warning",{
-    screenTime:1000000,distance:{y:100},
-    theme: "colors",
-    distance:{
-        x:0
-    }
-}).launch()
-new Bell({
-    title: "Nuevo tema Colors",
-    description: "Llama la atencion completa del usuario",
-},"success",{
-    screenTime:1000000,distance:{y:100},
-    theme: "colors",
-    distance:{
-        x:0
-    }
-}).launch()
-new Bell({
-    title: "Nuevo tema Colors",
-},"info",{
-    screenTime:1000000,distance:{y:100},
-    theme: "colors",
-    distance:{
-        x:0
-    }
-}).launch()
-
 form.addEventListener("submit",e=>{
     e.preventDefault()
     const $firstParams = [...document.querySelectorAll("form div:nth-child(1) input")]
