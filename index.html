@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground || BellJs</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="bell.css">
+    <link rel="stylesheet" type="text/css" href="js.css">
+    <link rel="stylesheet" type="text/css" href="themes/allThemes.css">
+    <script src="highlight.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    <h1>Playground</h1>
+    <p>Este playground es experimental y no tiene todas las funcionalidades, para revisar todas las funcionalidades revisar la <a href="https://belljs.vercel.app">documentacion</a></p>
+    <div class="container">
+        <form>
+            <div>
+                <h2>First Param</h2>
+                <div style="display:flex;gap:5px">
+                    <label style="display:block;">
+                        <p>Title:</p>
+                        <input type="text" name="title">
+                    </label>
+                    <label style="display:block;">
+                        <p>Description:</p>
+                        <input type="text" name="description">
+                    </label>  
+                </div>
+            </div>
+            <div>
+                <h2>Second Param</h2>
+                <div>
+                <label>
+                <input type="radio" name="type" value="info">
+                <p>Info</p>
+            </label>
+            <label>
+                <input type="radio" name="type" value="success">
+                <p>Success</p>
+            </label>
+            <label>
+                <input type="radio" name="type" value="warning">
+                <p>Warning</p>
+            </label>
+            <label>
+                <input type="radio" name="type" value="error">
+                <p>Error</p>
+            </label>
+            <label>
+                <input type="radio" name="type" checked value="none">
+                <p>None</p>
+            </label>
+            </div>
+        </div>
+        <div class="flex">
+                <h2>Three Param</h2>
+                <label>
+                    <input type="checkbox" name="animate" checked>
+                    <p>Animated</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="isColored" checked>
+                    <p>isColored</p>
+                </label>
+                <div style="display: flex;gap:5px">
+                    <label class="block">
+                        <p>Screen Time:</p>
+                        <input type="number" name="screenTime">
+                    </label>
+                    <label class="block">
+                        <p>Transition Duration:</p>
+                        <input type="number" name="transitionDuration">
+                    </label>
+                </div>
+                <div style="display: block;margin:15px 0;">
+                <p>Position:</p>
+                <div>
+                    <label>
+                <input type="radio" name="position" checked value="bottom-right">
+                <p>Bottom Right</p>
+            </label>
+                <label>
+                <input type="radio" name="position" value="bottom-center">
+                <p>Bottom Center</p>
+            </label>
+            <label>
+                <input type="radio" name="position" value="bottom-left">
+                <p>Bottom Left</p>
+            </label>
+            <label>
+                <input type="radio" name="position" value="top-right">
+                <p>Top Right</p>
+            </label>
+                <label>
+                <input type="radio" name="position" value="top-center">
+                <p>Top Center</p>
+            </label>
+            <label>
+                <input type="radio" name="position" value="top-left">
+                <p>Top Left</p>
+            </label>
+            </div>
+                <div style="display: block;margin:15px 0;">
+                <p>typeAnimation:</p>
+                <div>
+                <label>
+                <input type="radio" name="typeAnimation" value="fade-in">
+                <p>Fade in</p>
+            </label>
+            <label>
+                <input type="radio" name="typeAnimation" value="fade-in-out">
+                <p>Fade in out</p>
+            </label>
+            <label>
+                <input type="radio" name="typeAnimation" value="bound">
+                <p>Bound</p>
+            </label>
+            <label>
+                <input type="radio" name="typeAnimation" value="bound-2">
+                <p>Bound +</p>
+            </label>
+            </div>
+        </div>
+                
+                <label>
+                    <input type="checkbox" name="expand">
+                    <p>Expand</p>
+                </label>
+                <div style="display: block;margin:15px 0;">
+                <p>Theme:</p>
+                <div>
+                <label>
+                <input type="radio" name="theme" checked value="">
+                <p>Default</p>
+            </label>
+            <label>
+                <input type="radio" name="theme" value="colors">
+                <p>Colors</p>
+            </label>
+            <label>
+                <input type="radio" name="theme" value="light">
+                <p>Light</p>
+            </label>
+            <label>
+                <input type="radio" name="theme" value="chackra">
+                <p>Chackra</p>
+            </label>
+            <label>
+                <input type="radio" name="theme" value="gradient">
+                <p>Gradient</p>
+            </label>
+            </div>
+
+        </div>
+        <label>
+                    <input type="checkbox" name="timeline">
+                    <p>Timeline</p>
+                </label>
+                <div style="display: block;margin:15px 0;">
+                <p>RemoveOn:</p>
+                <div>
+                    <label>
+                <input type="radio" name="removeOn" value="" checked>
+                <p>None</p>
+            </label>
+                <label>
+                <input type="radio" name="removeOn" value="button">
+                <p>Button</p>
+            </label>
+            <label>
+                <input type="radio" name="removeOn" value="click">
+                <p>Click</p>
+            </label>
+            </div>
+        </div>
+            <button type="submit">Lanzar</button>
+            <button id="copy" type="button">Copiar</button>
+        </div>
+        </form>
+    </div>
+    <pre id="placeholder">
+    </pre>
+    <script src="bell.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
